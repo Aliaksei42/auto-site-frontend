@@ -1,0 +1,101 @@
+.postLink {
+    text-decoration: none; /* Убираем подчеркивание для ссылок */
+  }
+  
+  .post {
+    position: relative;
+    box-sizing: border-box;
+    display: flex; /* Устанавливаем контейнеру свойство display: flex; для использования flex-контейнера */
+    flex-direction: column; /* Задаем направление основной оси контейнера как column (столбец) */
+    /* Выравниваем дочерние элементы по центру вдоль поперечной оси */
+    justify-content: space-around; /* Используем space-around для равномерного распределения отступов между дочерними элементами вдоль основной оси */
+    color: black; /* Устанавливаем цвет текста внутри контейнера */
+    width: 345px; /* Устанавливаем ширину контейнера */
+    height: 460px;
+    transition: transform 0.3s ease-in-out;
+  
+    overflow: hidden; /* Ограничиваем видимость дочерних элементов по границам контейнера */
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание для всех ссылок внутри .post */
+  }
+  
+  .post:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    transform: scale(1); /* Изначально масштабирование равно 1 */
+  }
+  .post:hover::before {
+    transform: scale(1.1); /* Масштабирование при наведении */
+  }
+  
+  .post h3 {
+    font-size: 28px;
+  }
+  
+  .post h4 {
+    font-size: 16px;
+    color: black;
+  }
+  
+  .postTitle {
+    color: black; /* Устанавливаем цвет текста заголовка */
+    line-height: 32px; /* Устанавливаем высоту строки заголовка */
+    max-height: 64px;
+    text-decoration: none;
+    margin-bottom: 15px;
+   
+  }
+  
+  .postText {
+    margin-top: 20px;
+    width: 100%; /* Занимаем 100% ширины контейнера */
+    color: black; /* Устанавливаем цвет текста внутреннего текста */
+    font-size: 20px; /* Устанавливаем размер шрифта внутреннего текста */
+  }
+  
+  .postImage {
+    width: 345px; /* Устанавливаем ширину изображения */
+    height: 255px;
+    object-fit: cover; /* Заполняем контейнер, сохраняя пропорции изображения */
+    transition: transform 0.3s ease-in-out; /* Анимация увеличения при наведении */
+    
+  }
+  
+  .post:hover .postImage {
+    transform: scale(1.1); /* Увеличиваем размер изображения при наведении */
+  }
+  
+  .post:hover  .postTitle {
+    text-decoration: underline; /* Убираем подчеркивание для текста и изображения при наведении на .post */
+  
+  }
+  
+  /* UserList.module.css */
+
+.userCard {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .userCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .userCard h3 {
+    margin-top: 10px;
+  }
+  
+  .userCard p {
+    margin-top: 5px;
+  }

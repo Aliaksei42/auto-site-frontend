@@ -1,0 +1,166 @@
+/* PostPage.module.css */
+
+.postPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.postContainer {
+  max-width: 1100px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.postPageImage {
+  width: 1100px;
+  height: 680px;
+  object-fit: cover;
+}
+
+.postPageText img {
+  width: 1100px;
+  height: 680px;
+  object-fit: cover; /* Заполняем контейнер, сохраняя пропорции изображения */
+}
+
+.postPageTitle {
+  width: 1100px;
+  color: black;
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+.postPageText {
+  width: 1100px;
+  color: black;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+@media (max-width: 1150px) and (min-width: 950px) {
+  .postContainer {
+    width: 920px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+  .postPageImage {
+    width: 920px;
+    height: 560px;
+  }
+
+  .postPageText img {
+    width: 920px;
+    height: 680px;
+  }
+
+  .postPageTitle {
+    width: 920px;
+
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  .postPageText {
+    width: 920px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 630px) {
+  .postContainer {
+    width: 600px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+  .postPageImage {
+    width: 600px;
+    height: 300px;
+  }
+
+  .postPageText img {
+    width: 600px;
+    height: 300px;
+  }
+
+  .postPageTitle {
+    width: 600px;
+
+    font-size: 20px;
+    line-height: 10px;
+    margin-bottom: 10px;
+  }
+
+  .postPageText {
+    width: 600px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 630px) and (min-width: 460px) {
+  .postContainer {
+    width: 420px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+  .postPageImage {
+    width: 420px;
+    height: 200px;
+  }
+
+  .postPageText img {
+    width: 420px;
+    height: 200px;
+  }
+
+  .postPageTitle {
+    width: 420px;
+
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .postPageText {
+    width: 420px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 460px) {
+  .postContainer {
+    width: 290px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  
+  }
+  .postPageImage {
+    width: 290px;
+    height: 200px;
+  }
+
+  .postPageText img {
+    width: 290px;
+    height: 200px;
+  }
+
+  .postPageTitle {
+    width: 290px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .postPageText {
+    width: 290px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

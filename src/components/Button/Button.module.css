@@ -1,0 +1,25 @@
+/* Button.module.css */
+.button {
+  border: 2px solid rgb(26, 26, 26);
+  color: rgb(26, 26, 26);
+  display: inline-block;
+  font-family: 'Roboto, sans-serif';
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  line-height: 24px;
+  min-width: 100px;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  background-color: transparent; /* Добавлено свойство */
+  transition: color 0.3s, border-color 0.3s; /* Добавлены свойства для плавного перехода цвета */
+margin: 30px;
+}
+
+
+.button:hover {
+  color: #d31a22; /* Цвет текста при наведении */
+  border-color: #d31a22; /* Цвет границы при наведении */
+}
