@@ -9,7 +9,7 @@ const Interesting = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('https://plankton-app-crfpr.ondigitalocean.app/posts');
+        const response = await axios.get('monkfish-app-s78sm.ondigitalocean.app/posts');
         setAllFetchedPosts(response.data);
       } catch (error) {
         console.error('Error fetching posts:', error);
