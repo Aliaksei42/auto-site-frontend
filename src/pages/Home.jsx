@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('http://localhost:3002/posts');
+        const response = await axios.get('https://plankton-app-crfpr.ondigitalocean.app/posts');
         setAllFetchedPosts(response.data);
       } catch (error) {
         console.error('Error fetching posts:', error);
