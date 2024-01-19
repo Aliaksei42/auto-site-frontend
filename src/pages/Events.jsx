@@ -9,7 +9,7 @@ const Events = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('https://monkfish-app-s78sm.ondigitalocean.app/posts');
+        const response = await axios.get('https://monkfish-app-s78sm.ondigitalocean.app:8080/posts');
         setAllFetchedPosts(response.data);
       } catch (error) {
         console.error('Error fetching posts:', error);
