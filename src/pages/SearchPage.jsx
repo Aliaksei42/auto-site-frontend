@@ -11,7 +11,7 @@ const SearchPage = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('https://monkfish-app-s78sm.ondigitalocean.app:8080/posts')
+        const response = await axios.get('https://monkfish-app-s78sm.ondigitalocean.app/posts')
         setAllPosts(response.data)
       } catch (error) {
         console.error('Ошибка при получении постов:', error)
@@ -28,7 +28,7 @@ const SearchPage = () => {
   const handleSearch = useCallback(async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3002/posts?search=${searchTerm}`
+        `https://monkfish-app-s78sm.ondigitalocean.app/posts?search=${searchTerm}`
       )
       setSearchResults(response.data)
     } catch (error) {
