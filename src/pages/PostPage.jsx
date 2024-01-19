@@ -25,7 +25,7 @@ const PostPage = () => {
         }
 
         // Замените URL на ваш API MongoDB Atlas
-        const response = await axios.get(`https://monkfish-app-s78sm.ondigitalocean.app/posts/${slug}`)
+        const response = await axios.get(`https://monkfish-app-s78sm.ondigitalocean.app:8080/posts/${slug}`)
 
         if (response.data) {
           const matchingPost = response.data
