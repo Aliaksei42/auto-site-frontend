@@ -1,3 +1,4 @@
+User
 /* PostPage.module.css */
 
 .postPage {
@@ -6,28 +7,29 @@
   align-items: center;
   flex-direction: column;
   min-height: 80vh;
+  margin: 0 auto; /* Добавлено для центрирования по горизонтали */
 }
 
 .postContainer {
   max-width: 1100px;
   margin-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .postPageImage {
-  width: 1100px;
-  height: 680px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
 .postPageText img {
   width: 1100px;
-  height: 680px;
+  height: auto;
   object-fit: cover; /* Заполняем контейнер, сохраняя пропорции изображения */
 }
 
 .postPageTitle {
-  width: 1100px;
+  width: 100%;
   color: black;
   font-size: 28px;
   line-height: 32px;
@@ -43,30 +45,31 @@
 
 @media (max-width: 1150px) and (min-width: 950px) {
   .postContainer {
-    width: 920px;
+    width: 95%;
     margin-top: 40px;
     margin-bottom: 100px;
+    padding-left: 10px;
+    margin-right: 10px;
   }
   .postPageImage {
-    width: 920px;
+    width: 100%;
     height: 560px;
   }
 
   .postPageText img {
-    width: 920px;
-    height: 680px;
+    width: 100%;
+    height: 560px;
   }
 
   .postPageTitle {
-    width: 920px;
-
+    width: 100%;
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 10px;
   }
 
   .postPageText {
-    width: 920px;
+    width: 100%;
     font-size: 22px;
     line-height: 32px;
   }
@@ -74,61 +77,58 @@
 
 @media (max-width: 950px) and (min-width: 630px) {
   .postContainer {
-    width: 600px;
+    width: 95%;
     margin-top: 40px;
     margin-bottom: 100px;
   }
   .postPageImage {
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    height: 330px;
   }
 
   .postPageText img {
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    height: 330px;
   }
 
   .postPageTitle {
-    width: 600px;
-
+    width: auto;
     font-size: 20px;
     line-height: 10px;
     margin-bottom: 10px;
   }
 
   .postPageText {
-    width: 600px;
-
+    width: auto;
     font-size: 18px;
     line-height: 30px;
   }
 }
 @media (max-width: 630px) and (min-width: 460px) {
   .postContainer {
-    width: 420px;
+    width: 95%;
     margin-top: 30px;
     margin-bottom: 80px;
   }
   .postPageImage {
-    width: 420px;
-    height: 200px;
+    width: 100%;
+    height: 250px;
   }
 
   .postPageText img {
-    width: 420px;
+    width: 100%;
     height: 200px;
   }
 
   .postPageTitle {
-    width: 420px;
-
+    width: 100%;
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 5px;
   }
 
   .postPageText {
-    width: 420px;
+    width: 100%;
     font-size: 16px;
     line-height: 28px;
   }
@@ -136,30 +136,29 @@
 
 @media (max-width: 460px) {
   .postContainer {
-    width: 290px;
+    width: 95%;
     margin-top: 20px;
     margin-bottom: 80px;
-  
   }
   .postPageImage {
-    width: 290px;
+    width: 100%;
     height: 200px;
   }
 
   .postPageText img {
-    width: 290px;
+    width: 100%;
     height: 200px;
   }
 
   .postPageTitle {
-    width: 290px;
+    width: 100%;
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 5px;
   }
 
   .postPageText {
-    width: 290px;
+    width: 100%;
     font-size: 16px;
     line-height: 28px;
   }
