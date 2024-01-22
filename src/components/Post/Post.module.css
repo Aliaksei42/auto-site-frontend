@@ -7,13 +7,10 @@
   box-sizing: border-box;
   display: flex; /* Устанавливаем контейнеру свойство display: flex; для использования flex-контейнера */
   flex-direction: column; /* Задаем направление основной оси контейнера как column (столбец) */
-  /* Выравниваем дочерние элементы по центру вдоль поперечной оси */
-  justify-content: space-around; /* Используем space-around для равномерного распределения отступов между дочерними элементами вдоль основной оси */
   color: black; /* Устанавливаем цвет текста внутри контейнера */
   width: 345px; /* Устанавливаем ширину контейнера */
   height: 460px;
   transition: transform 0.3s ease-in-out;
-
   overflow: hidden; /* Ограничиваем видимость дочерних элементов по границам контейнера */
   cursor: pointer;
   text-decoration: none; /* Убираем подчеркивание для всех ссылок внутри .post */
@@ -42,22 +39,21 @@
 .postTitle {
   display: flex;
   color: black; /* Устанавливаем цвет текста заголовка */
-  line-height: 32px; /* Устанавливаем высоту строки заголовка */
-  max-height: 64px;
   text-decoration: none;
-  margin-bottom: 15px;
+  width: 100%;
+  color: black;
+  font-size: 28px;
 }
 
 .postText {
-  margin-top: 20px;
   width: 100%; /* Занимаем 100% ширины контейнера */
   color: black; /* Устанавливаем цвет текста внутреннего текста */
   font-size: 20px; /* Устанавливаем размер шрифта внутреннего текста */
 }
 
 .postImage {
-  width: 345px; /* Устанавливаем ширину изображения */
-  height: 255px;
+  width: 100%; /* Устанавливаем ширину изображения */
+  height: 220px;
   object-fit: cover; /* Заполняем контейнер, сохраняя пропорции изображения */
   transition: transform 0.3s ease-in-out; /* Анимация увеличения при наведении */
 }
@@ -72,98 +68,80 @@
 
 @media screen and (max-width: 1150px) and (min-width: 950px) {
   .post {
-    width: 280px; /* Устанавливаем ширину контейнера */
+    width: 285px; /* Устанавливаем ширину контейнера */
     height: 430px;
   }
 
   .postTitle {
-    line-height: 22px; /* Устанавливаем высоту строки заголовка */
-    max-height: 34px;
     text-decoration: none;
-    margin-bottom: 5px;
-    margin-top: -30px; /* Поднимаем заголовок на 20px */
   }
   .post h3 {
     font-size: 20px;
   }
   .postText {
-    margin-top: 10px;
     font-size: 18px; /* Устанавливаем размер шрифта внутреннего текста */
   }
 }
 
-@media screen and (max-width: 950px) and (min-width: 630px) {
+@media screen and (max-width: 950px) and (min-width: 775px) {
   .post {
-    width: 280px; /* Устанавливаем ширину контейнера */
+    width: 350px;
     height: 430px;
   }
 
   .postTitle {
-    line-height: 22px; /* Устанавливаем высоту строки заголовка */
-    max-height: 34px;
     text-decoration: none;
-    margin-bottom: 5px;
-    margin-top: -30px; /* Поднимаем заголовок на 20px */
   }
   .post h3 {
     font-size: 20px;
   }
   .postText {
-    margin-top: 10px;
     font-size: 18px; /* Устанавливаем размер шрифта внутреннего текста */
   }
 }
 
-@media screen and (max-width: 630px) and (min-width: 460px) {
+@media screen and (max-width: 775px) and (min-width: 650px) {
   .post {
-    width: 290px; /* Устанавливаем ширину контейнера */
-    height: 420px;
-    margin-bottom: -30px;
+    width: 290px;
+    height: 400px;
   }
 
   .postTitle {
-    line-height: 18px; /* Устанавливаем высоту строки заголовка */
-    max-height: 18px;
     text-decoration: none;
-    margin-bottom: 5px;
-    margin-top: -50px; /* Поднимаем заголовок на 20px */
   }
   .post h3 {
     font-size: 20px;
   }
   .postText {
-    margin-top: 10px;
+    font-size: 18px; /* Устанавливаем размер шрифта внутреннего текста */
+  }
+}
+@media screen and (max-width: 650px) and (min-width: 460px) {
+  .post {
+    min-width: 100%;
+    height: 330px;
+  }
+
+  .postTitle {
+    text-decoration: none;
+  }
+  .post h3 {
+    font-size: 18px;
+  }
+  .postText {
     font-size: 18px; /* Устанавливаем размер шрифта внутреннего текста */
   }
 }
 
 @media screen and (max-width: 460px) {
   .post {
-    width: 290px; /* Устанавливаем ширину контейнера */
+    width: 100%; /* Устанавливаем ширину контейнера */
     height: 350px;
-    margin-bottom: -20px;
-  }
-
-  .postTitle {
-    line-height: 18px; /* Устанавливаем высоту строки заголовка */
-    max-height: 8px;
-    text-decoration: none;
-    margin-bottom: -5px;
-    margin-top: -50px; /* Поднимаем заголовок на 20px */
   }
   .post h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .postText {
-    margin-top: 10px;
-    font-size: 18px; /* Устанавливаем размер шрифта внутреннего текста */
+    font-size: 16px; /* Устанавливаем размер шрифта внутреннего текста */
   }
-  .postImage {
-    width: 345px; /* Устанавливаем ширину изображения */
-    height: 205px;
-    object-fit: cover; /* Заполняем контейнер, сохраняя пропорции изображения */
-    transition: transform 0.3s ease-in-out; /* Анимация увеличения при наведении */
-  }
-  
 }
-

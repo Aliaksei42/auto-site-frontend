@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 1150px) and (min-width: 950px) {
   .postsContainer {
-    width: auto;
+    width: 100%;
     padding-top: 25px;
   }
   .postsRow {
@@ -50,42 +50,43 @@
 }
 @media screen and (max-width: 950px) and (min-width: 700px) {
   .postsContainer {
-    width: auto;
+    width: 95%;
     padding-top: 25px;
   }
   .postsRow {
     justify-content: center;
   }
-  .postsLeft {
-    max-width: 590px;
-  }
 
+  .postsLeft {
+    max-width: 100%;
+  }
   .posts {
     gap: 20px;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 700px) and (min-width: 630px) {
   .postsContainer {
-    width: auto;
+    width: 95%;
     padding-top: 25px;
   }
   .postsRow {
     justify-content: center;
   }
   .postsLeft {
-    max-width: 590px;
+    max-width: 100%;
   }
 
   .posts {
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 630px) and (min-width: 460px) {
   .postsContainer {
-    width: 440px;
+    width: 95%;
     padding-top: 20px;
     justify-content: center;
   }
@@ -94,7 +95,7 @@
   }
 
   .postsLeft {
-    max-width: 440px;
+    max-width: 100%;
   }
 
   .posts {
@@ -104,8 +105,8 @@
 }
 @media screen and (max-width: 460px) {
   .postsContainer {
-    width: auto;
-    padding-top: 25px;
+    width: 95%;
+    padding-top: 10px;
     justify-content: center;
   }
   .postsRow {
@@ -113,7 +114,7 @@
   }
 
   .postsLeft {
-    max-width: 290px;
+    max-width: 95%;
   }
 
   .posts {

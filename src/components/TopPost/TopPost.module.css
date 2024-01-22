@@ -6,11 +6,8 @@
 
 .topPost {
   position: relative;
-
   display: flex; /* Устанавливаем контейнеру свойство display: flex; для использования flex-контейнера */
   flex-direction: column; /* Задаем направление основной оси контейнера как column (столбец) */
-  /* Выравниваем дочерние элементы по центру вдоль поперечной оси */
-  /* Используем space-around для равномерного распределения отступов между дочерними элементами вдоль основной оси */
   color: black; /* Устанавливаем цвет текста внутри контейнера */
   width: 720px; /* Устанавливаем ширину контейнера */
   height: 540px;
@@ -19,7 +16,6 @@
   overflow: hidden; /* Ограничиваем видимость дочерних элементов по границам контейнера */
   cursor: pointer;
   text-decoration: none; /* Убираем подчеркивание для всех ссылок внутри .post */
-
 }
 
 .topPost:hover::before {
@@ -44,7 +40,7 @@
 
 .topPostTitle {
   color: black; /* Устанавливаем цвет текста заголовка */
-  max-height: 64px; /* Устанавливаем высоту строки заголовка */
+  height: 64px; 
   text-decoration: none;
   line-height: 32px;
 }
@@ -83,11 +79,11 @@
   }
   .topPostTitle {
     color: black; /* Устанавливаем цвет текста заголовка */
-    max-height: 46px; /* Устанавливаем высоту строки заголовка */
+    max-height: 46px; 
     line-height: 3px;
   }
   .topPostText {
-    width: 590px; 
+    width: 590px;
   }
 
   .topPost:hover .topPostImage {
@@ -97,22 +93,21 @@
 
 @media screen and (max-width: 950px) and (min-width: 630px) {
   .topPost {
-    width: 590px; /* Устанавливаем ширину контейнера */
+    width: 100%; /* Устанавливаем ширину контейнера */
     height: 460px;
-    
   }
   .topPostImage {
-    width: 590px; /* Устанавливаем ширину изображения */
+    width: 100%; /* Устанавливаем ширину изображения */
     height: 330px;
     object-fit: cover; /* Заполняем контейнер, сохраняя пропорции изображения */
     transition: transform 0.3s ease-in-out; /* Анимация увеличения при наведении */
   }
   .topPostTitle {
- max-height: 46px; /* Устанавливаем высоту строки заголовка */
+    height: 46px; 
     line-height: 3px;
   }
   .topPostText {
-    width: 590px; 
+    width: 100%;
   }
 
   .topPost:hover .topPostImage {
@@ -122,22 +117,23 @@
 
 @media screen and (max-width: 630px) and (min-width: 460px) {
   .topPost {
-    width: 440px; /* Устанавливаем ширину контейнера */
+    width: 100%; /* Устанавливаем ширину контейнера */
     height: 460px;
     justify-content: center;
   }
   .topPostImage {
-    width: 440px; /* Устанавливаем ширину изображения */
+    width: 100%; /* Устанавливаем ширину изображения */
     height: 330px;
     object-fit: cover; /* Заполняем контейнер, сохраняя пропорции изображения */
     transition: transform 0.3s ease-in-out; /* Анимация увеличения при наведении */
   }
   .topPostTitle {
-    line-height: 18px;
-    max-height: 70px;
+    height: 46px; 
+    line-height: 3px;
+    font-size: 0.8em;
   }
   .topPostText {
-    width: 590px; 
+    width: 100%;
   }
 
   .topPost:hover .topPostImage {
@@ -145,33 +141,32 @@
   }
 }
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 460px) {
   .topPost {
-    width: 290px; /* Устанавливаем ширину контейнера */
-    height: 330px;
+    width: 100%; /* Устанавливаем ширину контейнера */
+    height: 440px;
     justify-content: center;
   }
   .topPostImage {
-    width: 290px; /* Устанавливаем ширину изображения */
-    height: 200px;
+    width: 100%; /* Устанавливаем ширину изображения */
+    height: 260px;
     object-fit: cover; /* Заполняем контейнер, сохраняя пропорции изображения */
     transition: transform 0.3s ease-in-out; /* Анимация увеличения при наведении */
   }
   .topPostTitle {
     line-height: 18px;
     max-height: 70px;
+    font-size: 0.8em;
   }
-  
+
   .topPostTitle h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .topPostText {
-    width: 290px; 
+    width: 100%;
   }
 
   .topPost:hover .topPostImage {
     transform: scale(1.08); /* Увеличиваем размер изображения при наведении */
   }
 }
-
-
