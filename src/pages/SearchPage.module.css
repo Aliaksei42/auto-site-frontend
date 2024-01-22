@@ -1,0 +1,64 @@
+/* searchPage.module.css */
+
+.searchContainer {
+  width: 1150px;
+  margin: auto;
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Выравнивание по центру по горизонтали */
+  min-height: 70vh; /* Set minimum height to make sure the content takes at least the full height of the viewport */
+}
+
+.searchRow {
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.search {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Расстояние между постами */
+  justify-content: center;
+}
+
+.inputWithButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid rgb(26, 26, 26);
+  border-radius: 5px;
+
+  .clear {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .searchContainer {
+    width: auto;
+    padding-top: 20px; /* Уменьшаем верхний отступ */
+  }
+
+  .search {
+    justify-content: center;
+  }
+
+  .searchLeft {
+    width: 100%; /* Занимаем 100% ширины для одного столбца */
+  }
+
+  .inputWithButton {
+    margin-bottom: 20px; /* Уменьшаем отступ между input и результатами поиска */
+  }
+}

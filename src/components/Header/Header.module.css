@@ -1,0 +1,176 @@
+/* src/components/Header/Header.css */
+header {
+  background: #2a2a2a;
+  padding: 12px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 0; /* Убираем нижний отступ */
+}
+
+.headerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0; /* Убираем нижний отступ */
+}
+
+.currentLanguage {
+  font-size: 1em;
+}
+/* Выпадающее окно с возможностью выбора языка */
+
+.languageSwitch {
+  cursor: pointer;
+  position: relative;
+  padding-right: 353px;
+}
+
+.languageMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #555;
+  color: white;
+  border: 1px solid #333;
+  border-top: none;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.languageMenu div {
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.languageMenu div:hover {
+  background-color: #444;
+}
+
+/* End Выпадающее окно с возможностью выбора языка */
+
+/* Средняя часть часть логотин и название сайта */
+/* Header.css (дополнение) */
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+}
+
+.logo img {
+  width: 40px; /* Укажите подходящую ширину для вашего логотипа */
+  margin-right: 5px;
+}
+
+.logo h1 {
+  display: flex;
+  align-items: center;
+  font-size: 2em; /* Подберите размер шрифта по вашему усмотрению */
+  white-space: nowrap;
+}
+
+.logoLink {
+  text-decoration: none; /* Убираем стандартное подчеркивание для ссылки */
+  color: white; /* Устанавливаем цвет текста */
+}
+
+/* End Средняя часть часть логотин и название сайта */
+
+/* Правая часть конверт*/
+
+.emailLink {
+  text-decoration: none;
+  color: white;
+  padding-left: 353px;
+}
+
+.emailLink:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.emailIcon {
+  font-size: 1.5em; /* font-size: 30px; */
+  cursor: pointer;
+  text-decoration: none; /* Убираем подчеркивание */
+  color: white; /* Устанавливаем цвет текста */
+}
+
+.emailIcon:hover {
+  color: white; /* Вы можете изменить цвет при наведении, если хотите */
+  text-decoration: none; /* Убираем подчеркивание при наведении */
+}
+/* End Правая часть конверт*/
+
+/* Добавление стилей для экранов от 1100px до 900px */
+@media screen and (max-width: 1150px) and (min-width: 950px) {
+  header {
+    font-size: 17px;
+    padding: 10px;
+  }
+  .languageSwitch {
+    padding-right: 310px;
+  }
+
+  .emailLink {
+    padding-left: 310px;
+  }
+}
+
+/* Добавление стилей для экранов от 900px до 600px */
+@media screen and (max-width: 950px) and (min-width: 700px) {
+  header {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .languageSwitch {
+    padding-right: 190px;
+  }
+
+  .emailLink {
+    padding-left: 190px;
+  }
+}
+
+/* Добавление стилей для экранов от 900px до 600px */
+@media screen and (max-width: 700px) and (min-width: 600px) {
+  header {
+    font-size: 13px;
+    padding: 0px;
+  }
+  .languageSwitch {
+    padding-right: 150px;
+  }
+
+  .emailLink {
+    padding-left: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 450px) {
+  header {
+    font-size: 12px;
+    padding: 0px;
+  }
+  .languageSwitch {
+    padding-right: 100px;
+  }
+
+  .emailLink {
+    padding-left: 100px;
+  }
+}
+@media screen and (max-width: 450px) {
+  header {
+    font-size: 11px;
+    padding: 0px;
+  }
+  .languageSwitch {
+    padding-right: 50px;
+  }
+
+  .emailLink {
+    padding-left: 50px;
+  }
+}

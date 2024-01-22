@@ -1,0 +1,71 @@
+.sidebarPostLink {
+  text-decoration: none; /* Убираем подчеркивание для ссылок */
+  font-size: 20px;
+}
+
+.sidebarPost {
+  position: relative;
+  box-sizing: border-box;
+  display: flex; /* Устанавливаем контейнеру свойство display: flex; для использования flex-контейнера */
+  /* Задаем направление основной оси контейнера как column (столбец) */
+  /* Выравниваем дочерние элементы по центру вдоль поперечной оси */
+  justify-content: space-between; /* Используем space-around для равномерного распределения отступов между дочерними элементами вдоль основной оси */
+  color: black; /* Устанавливаем цвет текста внутри контейнера */
+  width: 320px; /* Устанавливаем ширину контейнера */
+  height: 170px;
+  transition: transform 0.3s ease-in-out;
+  padding-left: 30px;
+  padding-top: 10px;
+  overflow: hidden; /* Ограничиваем видимость дочерних элементов по границам контейнера */
+  cursor: pointer;
+  text-decoration: none; /* Убираем подчеркивание для всех ссылок внутри .post */
+}
+
+.sidebarPost:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+  transform: scale(1); /* Изначально масштабирование равно 1 */
+}
+.sidebarPost:hover::before {
+  transform: scale(1.1); /* Масштабирование при наведении */
+}
+
+.sidebarPost h3 {
+  font-size: 1em;
+}
+
+.sidebarPostTitle {
+  color: black; /* Устанавливаем цвет текста заголовка */
+  padding-left: 10px;
+  text-decoration: none;
+
+  line-height: 22px; /* Устанавливаем высоту строки заголовка */
+  width: 100%; /* Занимаем всю доступную ширину */
+  margin-left: 10px; /* Добавляем отступ слева */
+}
+
+.sidebarPostImage {
+  width: 150px; /* Устанавливаем ширину изображения */
+  height: 150px;
+  object-fit: cover; /* Заполняем контейнер, сохраняя пропорции изображения */
+  transition: transform 0.3s ease-in-out; /* Анимация увеличения при наведении */
+}
+
+.sidebarPost:hover .sidebarPostImage {
+  transform: scale(1.1); /* Увеличиваем размер изображения при наведении */
+}
+
+.sidebarPost:hover .sidebarPostTitle {
+  text-decoration: underline; /* Убираем подчеркивание для текста и изображения при наведении на .post */
+}
+
+@media screen and (max-width: 950px) and (min-width: 630px) {
+
+}

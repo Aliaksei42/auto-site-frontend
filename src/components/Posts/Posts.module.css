@@ -1,0 +1,123 @@
+/* Posts.module.css */
+
+.postsContainer {
+  width: 1130px;
+  margin: 0 auto;
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Выравнивание по центру по горизонтали */
+}
+
+.postsRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.postsLeft {
+  max-width: 720px;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Расстояние между постами */
+}
+
+.postsRight {
+  display: flex; /* Добавляем свойство display: flex; для управления потомками */
+  flex-direction: column; /* Размещаем потомков в колонке */
+  align-items: flex-start; /* Выравниваем по левому краю */
+  max-width: 410px;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 950px) {
+  .postsContainer {
+    width: auto;
+    padding-top: 25px;
+  }
+  .postsRow {
+    justify-content: center;
+  }
+  .postsLeft {
+    max-width: 590px;
+  }
+
+  .posts {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 950px) and (min-width: 700px) {
+  .postsContainer {
+    width: auto;
+    padding-top: 25px;
+  }
+  .postsRow {
+    justify-content: center;
+  }
+  .postsLeft {
+    max-width: 590px;
+  }
+
+  .posts {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 630px) {
+  .postsContainer {
+    width: auto;
+    padding-top: 25px;
+  }
+  .postsRow {
+    justify-content: center;
+  }
+  .postsLeft {
+    max-width: 590px;
+  }
+
+  .posts {
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 630px) and (min-width: 460px) {
+  .postsContainer {
+    width: 440px;
+    padding-top: 20px;
+    justify-content: center;
+  }
+  .postsRow {
+    justify-content: center;
+  }
+
+  .postsLeft {
+    max-width: 440px;
+  }
+
+  .posts {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .postsContainer {
+    width: auto;
+    padding-top: 25px;
+    justify-content: center;
+  }
+  .postsRow {
+    justify-content: center;
+  }
+
+  .postsLeft {
+    max-width: 290px;
+  }
+
+  .posts {
+    justify-content: center;
+    gap: 20px;
+  }
+}
