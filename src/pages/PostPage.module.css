@@ -6,29 +6,28 @@
   align-items: center;
   flex-direction: column;
   min-height: 80vh;
-  margin: 0 auto; /* Добавлено для центрирования по горизонтали */
 }
 
 .postContainer {
   max-width: 1100px;
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .postPageImage {
-  width: 100%;
-  height: auto;
+  width: 1100px;
+  height: 680px;
   object-fit: cover;
 }
 
 .postPageText img {
   width: 1100px;
-  height: auto;
+  height: 680px;
   object-fit: cover; /* Заполняем контейнер, сохраняя пропорции изображения */
 }
 
 .postPageTitle {
-  width: 100%;
+  width: 1100px;
   color: black;
   font-size: 28px;
   line-height: 32px;
@@ -44,31 +43,30 @@
 
 @media (max-width: 1150px) and (min-width: 950px) {
   .postContainer {
-    width: 95%;
+    width: 920px;
     margin-top: 40px;
     margin-bottom: 100px;
-    padding-left: 10px;
-    margin-right: 10px;
   }
   .postPageImage {
-    width: 100%;
+    width: 920px;
     height: 560px;
   }
 
   .postPageText img {
-    width: 100%;
-    height: 560px;
+    width: 920px;
+    height: 680px;
   }
 
   .postPageTitle {
-    width: 100%;
+    width: 920px;
+
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 10px;
   }
 
   .postPageText {
-    width: 100%;
+    width: 920px;
     font-size: 22px;
     line-height: 32px;
   }
@@ -76,58 +74,61 @@
 
 @media (max-width: 950px) and (min-width: 630px) {
   .postContainer {
-    width: 95%;
+    width: 600px;
     margin-top: 40px;
     margin-bottom: 100px;
   }
   .postPageImage {
-    width: 100%;
-    height: 330px;
+    width: 600px;
+    height: 300px;
   }
 
   .postPageText img {
-    width: 100%;
-    height: 330px;
+    width: 600px;
+    height: 300px;
   }
 
   .postPageTitle {
-    width: auto;
+    width: 600px;
+
     font-size: 20px;
     line-height: 10px;
     margin-bottom: 10px;
   }
 
   .postPageText {
-    width: auto;
+    width: 600px;
+
     font-size: 18px;
     line-height: 30px;
   }
 }
 @media (max-width: 630px) and (min-width: 460px) {
   .postContainer {
-    width: 95%;
+    width: 420px;
     margin-top: 30px;
     margin-bottom: 80px;
   }
   .postPageImage {
-    width: 100%;
-    height: 250px;
+    width: 420px;
+    height: 200px;
   }
 
   .postPageText img {
-    width: 100%;
+    width: 420px;
     height: 200px;
   }
 
   .postPageTitle {
-    width: 100%;
+    width: 420px;
+
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 5px;
   }
 
   .postPageText {
-    width: 100%;
+    width: 420px;
     font-size: 16px;
     line-height: 28px;
   }
@@ -135,29 +136,30 @@
 
 @media (max-width: 460px) {
   .postContainer {
-    width: 95%;
+    width: 290px;
     margin-top: 20px;
     margin-bottom: 80px;
+  
   }
   .postPageImage {
-    width: 100%;
+    width: 290px;
     height: 200px;
   }
 
   .postPageText img {
-    width: 100%;
+    width: 290px;
     height: 200px;
   }
 
   .postPageTitle {
-    width: 100%;
+    width: 290px;
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 5px;
   }
 
   .postPageText {
-    width: 100%;
+    width: 290px;
     font-size: 16px;
     line-height: 28px;
   }
