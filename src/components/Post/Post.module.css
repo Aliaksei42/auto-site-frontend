@@ -39,11 +39,6 @@
   font-size: 28px;
 }
 
-/* .post h4 {
-  font-size: 16px;
-  color: black;
-} */
-
 .postTitle {
   display: flex;
   color: black; /* Устанавливаем цвет текста заголовка */
