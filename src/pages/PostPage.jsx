@@ -3,9 +3,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-
-import Post from '../components/Post/Post' // Предполагается, что у вас есть компонент Post
-import NotFound from '../components/NotFound/NotFound' // Предполагается, что у вас есть компонент NotFound
 import styles from './PostPage.module.css' // Импортируем стили для компонента PostPage
 
 // Компонент PostPage
@@ -54,7 +51,7 @@ const PostPage = () => {
     return <h3>Loading...</h3>
   }
 
-  const { img, title, text, date, category } = selectedPost
+  const { img, title, text, date } = selectedPost
   // const postUrl = `http://localhost:3000/posts/${slug}`
 
   const formattedText = text.split('\n').map((paragraph, index) => (

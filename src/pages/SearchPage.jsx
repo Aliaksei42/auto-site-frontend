@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import styles from './SearchPage.module.css'
 import Post from '../components/Post/Post'
@@ -6,7 +6,7 @@ import Post from '../components/Post/Post'
 const SearchPage = () => {
   const [allPosts, setAllPosts] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
-  const [searchResults, setSearchResults] = useState([])
+  
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -16,28 +16,14 @@ const SearchPage = () => {
         )
         setAllPosts(response.data)
       } catch (error) {
-        console.error('Ошибка при получении постов:', error)
+        console.error('Receive error:', error)
       }
     }
 
     fetchPosts()
   }, [])
 
-  const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value)
-  }
-
-  const handleSearch = useCallback(async () => {
-    try {
-      const response = await axios.get(
-        `https://monkfish-app-s78sm.ondigitalocean.app/posts?search=${searchTerm}`
-      )
-      setSearchResults(response.data)
-    } catch (error) {
-      console.error('Ошибка при выполнении поиска:', error)
-    }
-  }, [searchTerm])
-
+  
   const filterPosts = (post) => {
     const lowercaseSearchTerm = searchTerm.toLowerCase()
     return (
@@ -46,7 +32,7 @@ const SearchPage = () => {
     )
   }
 
-  const filteredResults = searchTerm ? allPosts.filter(filterPosts) : allPosts
+  const filteredResults = searchTerm ? allPosts.filter(filterPosts) : []
 
   return (
     <div className={styles.searchContainer}>
@@ -56,22 +42,22 @@ const SearchPage = () => {
             type="text"
             placeholder="Wpisz tekst do wyszukania"
             value={searchTerm}
-            onChange={handleSearchChange}
+            onChange={(event) => setSearchTerm(event.target.value)}
             className={styles.input}
           />
         </div>
 
-        {searchTerm && (
-          <div className={styles.search}>
-            {' '}
-            {/* Use a div instead of ul */}
-            {filteredResults.map((post) => (
-              <div key={post.slug} className={styles.search}>
+        <div className={styles.search}>
+        {filteredResults.length === 0 && searchTerm.length > 0 ? (
+            <div>Nie ma takiego wyniku</div>
+          ) : (
+            filteredResults.map((post) => (
+              <div key={post.slug}>
                 <Post post={post} />
               </div>
-            ))}
-          </div>
-        )}
+            ))
+          )}
+        </div>
       </div>
     </div>
   )

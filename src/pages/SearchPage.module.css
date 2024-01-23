@@ -19,6 +19,7 @@
 }
 
 .search {
+  font-size: 25px;
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;

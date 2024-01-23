@@ -196,5 +196,8 @@ header {
   .emailLink {
     padding-left: 50px;
   }
+  .currentLanguage {
+    font-size: 1.2em;
+  }
 
 }
