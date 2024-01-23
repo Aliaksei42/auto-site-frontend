@@ -146,6 +146,9 @@ header {
   .emailLink {
     padding-left: 150px;
   }
+  .currentLanguage {
+    font-size: 1.2em;
+  }
 }
 
 @media screen and (max-width: 600px) and (min-width: 450px) {
@@ -160,8 +163,11 @@ header {
   .emailLink {
     padding-left: 100px;
   }
+  .currentLanguage {
+    font-size: 1.2em;
+  }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) and (min-width: 400px) {
   header {
     font-size: 11px;
     padding: 0px;
@@ -173,4 +179,22 @@ header {
   .emailLink {
     padding-left: 50px;
   }
+  .currentLanguage {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    font-size: 10px;
+    padding: 0px;
+  }
+  .languageSwitch {
+    padding-right: 50px;
+  }
+
+  .emailLink {
+    padding-left: 50px;
+  }
+
 }
