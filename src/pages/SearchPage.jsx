@@ -11,7 +11,9 @@ const SearchPage = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('https://monkfish-app-s78sm.ondigitalocean.app/posts')
+        const response = await axios.get(
+          'https://monkfish-app-s78sm.ondigitalocean.app/posts'
+        )
         setAllPosts(response.data)
       } catch (error) {
         console.error('Ошибка при получении постов:', error)
@@ -49,29 +51,27 @@ const SearchPage = () => {
   return (
     <div className={styles.searchContainer}>
       <div className={styles.searchRow}>
-        <div className={styles.searchLeft}>
-          <div className={styles.inputWithButton}>
-            <input
-              type="text"
-              placeholder="Wpisz tekst do wyszukania"
-              value={searchTerm}
-              onChange={handleSearchChange}
-              className={styles.input}
-            />
-          </div>
-
-          {searchTerm && (
-            
-              <div className={styles.search}> {/* Use a div instead of ul */}
-              {filteredResults.map((post) => (
-                <div key={post.slug} className={styles.search}>
-                  <Post post={post} />
-                </div>
-              ))}
-               </div>
-           
-          )}
+        <div className={styles.inputWithButton}>
+          <input
+            type="text"
+            placeholder="Wpisz tekst do wyszukania"
+            value={searchTerm}
+            onChange={handleSearchChange}
+            className={styles.input}
+          />
         </div>
+
+        {searchTerm && (
+          <div className={styles.search}>
+            {' '}
+            {/* Use a div instead of ul */}
+            {filteredResults.map((post) => (
+              <div key={post.slug} className={styles.search}>
+                <Post post={post} />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

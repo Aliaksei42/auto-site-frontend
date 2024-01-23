@@ -1,8 +1,9 @@
 /* searchPage.module.css */
 
 .searchContainer {
-  width: 1150px;
-  margin: auto;
+  width: 100%;
+  max-width: 1150px; 
+  margin: 0 auto;
   padding-top: 45px;
   display: flex;
   flex-direction: column;
@@ -11,9 +12,10 @@
 }
 
 .searchRow {
-  display: flex;
+ 
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .search {
@@ -35,15 +37,9 @@
   font-size: 18px;
   border: 2px solid rgb(26, 26, 26);
   border-radius: 5px;
-
-  .clear {
-    position: absolute;
-    width: 14px;
-    height: 14px;
-  }
 }
+@media (max-width: 1150px) and (min-width: 650px) {
 
-@media screen and (max-width: 1150px) {
   .searchContainer {
     width: 100%;
     padding-top: 20px; /* Уменьшаем верхний отступ */
@@ -52,13 +48,30 @@
 
   .search {
     justify-content: center;
+    align-items: center;
   }
 
-  .searchLeft {
-    width: 95%; /* Занимаем 100% ширины для одного столбца */
-  }
 
   .inputWithButton {
     margin-bottom: 20px; /* Уменьшаем отступ между input и результатами поиска */
   }
+}
+
+@media (max-width: 650px) {
+  .searchContainer {
+    width: 95%;
+    padding-top: 20px; /* Уменьшаем верхний отступ */
+ 
+  }
+
+  .search {
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .inputWithButton {
+    margin-bottom: 20px; /* Уменьшаем отступ между input и результатами поиска */
+  }
+
 }
