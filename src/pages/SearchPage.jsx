@@ -25,12 +25,14 @@ const SearchPage = () => {
 
   
   const filterPosts = (post) => {
-    const lowercaseSearchTerm = searchTerm.toLowerCase()
-    return (
-      post.title.toLowerCase().includes(lowercaseSearchTerm) ||
-      post.text.toLowerCase().includes(lowercaseSearchTerm)
-    )
-  }
+    const lowercaseSearchTerm = searchTerm.toLowerCase();
+    const searchTerms = lowercaseSearchTerm.split(' ');
+  
+    return searchTerms.every((term) =>
+      post.title.toLowerCase().includes(term) ||
+      post.text.toLowerCase().includes(term)
+    );
+  };
 
   const filteredResults = searchTerm ? allPosts.filter(filterPosts) : []
 
