@@ -105,7 +105,7 @@
     width: 290px;
     height: 400px;
   }
-
+  
   .postTitle {
     text-decoration: none;
   }
@@ -118,10 +118,13 @@
 }
 @media screen and (max-width: 650px) and (min-width: 460px) {
   .post {
-    min-width: 100%;
-    height: 330px;
+    width: 100%;
+  height: 100%;
   }
-
+  .postImage {
+    width: 100%; /* Устанавливаем ширину изображения */
+    height: 100%;
+  }
   .postTitle {
     text-decoration: none;
   }
@@ -135,8 +138,8 @@
 
 @media screen and (max-width: 460px) {
   .post {
-    width: 100%; /* Устанавливаем ширину контейнера */
-    height: 350px;
+    min-width: 100%; /* Устанавливаем ширину контейнера */
+    height: 330px;
   }
   .post h3 {
     font-size: 18px;

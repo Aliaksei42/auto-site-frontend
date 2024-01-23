@@ -45,8 +45,9 @@
 
 @media screen and (max-width: 1150px) {
   .searchContainer {
-    width: auto;
+    width: 100%;
     padding-top: 20px; /* Уменьшаем верхний отступ */
+ 
   }
 
   .search {
@@ -54,7 +55,7 @@
   }
 
   .searchLeft {
-    width: 100%; /* Занимаем 100% ширины для одного столбца */
+    width: 95%; /* Занимаем 100% ширины для одного столбца */
   }
 
   .inputWithButton {
