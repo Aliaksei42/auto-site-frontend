@@ -204,10 +204,10 @@ header {
     padding-left: 30px;
   }
   .currentLanguage {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .emailIcon {
-    font-size: 1.8em; /* font-size: 30px; */
+    font-size: 2.2em; /* font-size: 30px; */
   }
 }
 
@@ -232,7 +232,7 @@ header {
     font-size: 1.3em;
   }
   .emailIcon {
-    font-size: 1.9em; /* font-size: 30px; */
+    font-size: 2.2em; /* font-size: 30px; */
   }
 
 }
