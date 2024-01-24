@@ -88,7 +88,7 @@
 @media screen and (max-width: 950px) and (min-width: 775px) {
   .post {
     width: 350px;
-    min-height: 100%;
+    max-height: 100%;
   }
   .postImage {
     height: 260px;
