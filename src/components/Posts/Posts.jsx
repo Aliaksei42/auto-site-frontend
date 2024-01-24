@@ -5,7 +5,7 @@ import TopPost from '../TopPost/TopPost';
 import SidebarPosts from '../SidebarPosts/SidebarPosts';
 import styles from './Posts.module.css';
 
-const Posts = ({ category, allPosts }) => {
+const Posts = ({ allPosts }) => {
   const [visiblePosts, setVisiblePosts] = useState(4);
 
   const topPost = allPosts.category.find(post => post.place === 'top');

@@ -4,7 +4,7 @@ import styles from './NotFound.module.css'
 
 const NotFound = () => {
     const notFound = {
-    img: '../../../img/photo/NotFound.jpg',
+    img: '../../../../img/photo/NotFound.jpg',
     title: 'Страница не найдена',
     text: 'Попробуйте через 5 мин.',
   };

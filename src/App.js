@@ -16,7 +16,7 @@ import Trends from './pages/Trends'
 import SearchPage from './pages/SearchPage'
 import Interesting from './pages/Interesting'
 
-import NotFound from './components/NotFound/NotFound'
+import NotFound from './pages/NotFound'
 
 // Основной компонент приложения
 const App = () => {

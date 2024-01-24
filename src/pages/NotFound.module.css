@@ -1,0 +1,44 @@
+/* PostPage.module.css */
+
+.postPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Высота 100% экрана */
+    
+  }
+  
+  .notFoundContainer {
+    max-width: 900px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+    
+  .notFoundImage {
+    width: 900px;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  .postPageTitle {
+    width: 900px;
+    color: black;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .postPageText {
+    width: 900px;
+    color: black;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  
+  
+  /* (
+      <div className={styles.notFoundContainer}>
+        <img className={styles.notFoundImage} src={notFoundImg} alt="Not Found" />
+      </div>
+    ) */
