@@ -60,7 +60,7 @@ header {
 
 .logo img {
   width: 150px; /* Укажите подходящую ширину для вашего логотипа */
-  margin-right: 15px;
+  margin-right: 25px;
   margin-top: -15px;
 }
 
@@ -181,6 +181,9 @@ header {
   .currentLanguage {
     font-size: 1.2em;
   }
+  .emailIcon {
+    font-size: 1.6em; /* font-size: 30px; */
+  }
 }
 @media screen and (max-width: 450px) and (min-width: 400px) {
   header {
@@ -203,6 +206,9 @@ header {
   .currentLanguage {
     font-size: 1.2em;
   }
+  .emailIcon {
+    font-size: 1.7em; /* font-size: 30px; */
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -224,6 +230,9 @@ header {
   }
   .currentLanguage {
     font-size: 1.3em;
+  }
+  .emailIcon {
+    font-size: 1.6em; /* font-size: 30px; */
   }
 
 }
