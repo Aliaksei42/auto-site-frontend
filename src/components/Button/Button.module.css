@@ -15,9 +15,8 @@
   width: 150px;
   background-color: transparent; /* Добавлено свойство */
   transition: color 0.3s, border-color 0.3s; /* Добавлены свойства для плавного перехода цвета */
-margin: 30px;
+  margin: 30px;
 }
-
 
 .button:hover {
   color: #d31a22; /* Цвет текста при наведении */

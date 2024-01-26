@@ -66,16 +66,13 @@
   }
 }
 
-
 /* Добавление стилей для экранов 600px и менее */
 @media screen and (max-width: 600px) {
-
   .navLink {
     margin-right: 15px;
     margin-left: 15px;
     justify-content: center;
     font-size: 17px;
-  
   }
 
   /* Размещение NavLink в две колонки по три штуки */
@@ -91,7 +88,7 @@
   .navLink::after {
     height: 5px;
   }
-  
+
   /* Стили для активного и при наведении на NavLink */
   .navLink.active::after,
   .navLink:hover::after {

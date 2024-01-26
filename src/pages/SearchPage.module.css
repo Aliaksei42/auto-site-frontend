@@ -7,8 +7,8 @@
   padding-top: 45px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Выравнивание по центру по горизонтали */
-  min-height: 70vh; /* Set minimum height to make sure the content takes at least the full height of the viewport */
+  align-items: center;
+  min-height: 70vh;
 }
 
 .searchRow {
@@ -22,7 +22,7 @@
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px; /* Расстояние между постами */
+  gap: 30px;
   justify-content: center;
 }
 
@@ -41,7 +41,7 @@
 @media (max-width: 1150px) and (min-width: 650px) {
   .searchContainer {
     width: 100%;
-    padding-top: 20px; /* Уменьшаем верхний отступ */
+    padding-top: 20px;
   }
 
   .search {
@@ -50,7 +50,7 @@
   }
 
   .inputWithButton {
-    margin-bottom: 20px; /* Уменьшаем отступ между input и результатами поиска */
+    margin-bottom: 20px;
   }
   .input {
     justify-content: center;
@@ -62,7 +62,7 @@
 @media (max-width: 650px) {
   .searchContainer {
     width: 95%;
-    padding-top: 20px; /* Уменьшаем верхний отступ */
+    padding-top: 20px;
   }
 
   .search {
@@ -71,7 +71,7 @@
   }
 
   .inputWithButton {
-    margin-bottom: 20px; /* Уменьшаем отступ между input и результатами поиска */
+    margin-bottom: 20px;
   }
   .input {
     justify-content: center;

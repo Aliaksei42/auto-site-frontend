@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import Button from '../Button/Button';
-import Post from '../Post/Post';
-import TopPost from '../TopPost/TopPost';
-import SidebarPosts from '../SidebarPosts/SidebarPosts';
-import styles from './Posts.module.css';
+import React, { useState } from 'react'
+import Button from '../Button/Button'
+import Post from '../Post/Post'
+import TopPost from '../TopPost/TopPost'
+import SidebarPosts from '../SidebarPosts/SidebarPosts'
+import styles from './Posts.module.css'
 
 const Posts = ({ allPosts }) => {
-  const [visiblePosts, setVisiblePosts] = useState(4);
+  const [visiblePosts, setVisiblePosts] = useState(4)
 
-  const topPost = allPosts.category.find(post => post.place === 'top');
+  const topPost = allPosts.category.find((post) => post.place === 'top')
 
   const handleShowMore = () => {
-    setVisiblePosts((prevVisiblePosts) => prevVisiblePosts + 4);
-  };
+    setVisiblePosts((prevVisiblePosts) => prevVisiblePosts + 4)
+  }
 
   return (
     <div className={styles.postsContainer}>
@@ -21,11 +21,14 @@ const Posts = ({ allPosts }) => {
           {topPost && <TopPost topPost={topPost} />}
 
           <div className={styles.posts}>
-            {allPosts.category.filter(post => post.place !== 'top').slice(0, visiblePosts).map(post => (
-              <div key={post.slug} className={styles.posts}>
-                <Post key={post.slug} post={post} />
-              </div>
-            ))}
+            {allPosts.category
+              .filter((post) => post.place !== 'top')
+              .slice(0, visiblePosts)
+              .map((post) => (
+                <div key={post.slug} className={styles.posts}>
+                  <Post key={post.slug} post={post} />
+                </div>
+              ))}
           </div>
         </div>
         <div className={styles.postsRight}>
@@ -36,7 +39,7 @@ const Posts = ({ allPosts }) => {
         <Button onClick={handleShowMore}>Show more</Button>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Posts;
+export default Posts

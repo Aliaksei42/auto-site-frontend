@@ -107,7 +107,7 @@
 @media screen and (max-width: 775px) and (min-width: 650px) {
   .post {
     width: 290px;
-    height: 100%;
+    height: 350px;
   }
   .postImage {
     height: 200px;
@@ -124,12 +124,12 @@
 }
 @media screen and (max-width: 650px) and (min-width: 460px) {
   .post {
-    width: 100%;
-    height: auto;
-    justify-content: center;
+    width: 420px;
+    height: 100%;
   }
   .postImage {
-    height: auto;
+    min-width: auto;
+    min-height: auto;
   }
   .postTitle {
     text-decoration: none;

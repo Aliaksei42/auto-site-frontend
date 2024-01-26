@@ -1,27 +1,26 @@
 .inputWithButton {
-    display: flex;
-    justify-content: space-between; 
-    align-items:center;
-    width: 320px;
-  }
-  
-  .input {
-    
-    padding: 10px;
-    font-size: 18px;
-    border: 2px solid  rgb(26, 26, 26);
-    border-radius: 5px;
-    margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+}
 
-    .clear {
-      position: absolute;
-      width: 14px;
-      height: 14px;
-    }
+.input {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid rgb(26, 26, 26);
+  border-radius: 5px;
+  margin-left: 30px;
+
+  .clear {
+    position: absolute;
+    width: 14px;
+    height: 14px;
   }
-  
-  .inputButton {
-     color: rgb(26, 26, 26);
+}
+
+.inputButton {
+  color: rgb(26, 26, 26);
   display: inline-block;
   font-family: 'Roboto, sans-serif';
   font-size: 16px;
@@ -32,11 +31,9 @@
   width: 50px;
   background-color: transparent; /* Добавлено свойство */
   transition: color 0.3s, border-color 0.3s; /* Добавлены свойства для плавного перехода цвета */
+}
 
-  }
-  
-
-  .button:hover {
-    color: #d31a22; /* Цвет текста при наведении */
-    border-color: #d31a22; /* Цвет границы при наведении */
-  }
+.button:hover {
+  color: #d31a22; /* Цвет текста при наведении */
+  border-color: #d31a22; /* Цвет границы при наведении */
+}

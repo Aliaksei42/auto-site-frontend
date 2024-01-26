@@ -6,7 +6,6 @@ import Post from '../components/Post/Post'
 const SearchPage = () => {
   const [allPosts, setAllPosts] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
-  
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -23,16 +22,16 @@ const SearchPage = () => {
     fetchPosts()
   }, [])
 
-  
   const filterPosts = (post) => {
-    const lowercaseSearchTerm = searchTerm.toLowerCase();
-    const searchTerms = lowercaseSearchTerm.split(' ');
-  
-    return searchTerms.every((term) =>
-      post.title.toLowerCase().includes(term) ||
-      post.text.toLowerCase().includes(term)
-    );
-  };
+    const lowercaseSearchTerm = searchTerm.toLowerCase()
+    const searchTerms = lowercaseSearchTerm.split(' ')
+
+    return searchTerms.every(
+      (term) =>
+        post.title.toLowerCase().includes(term) ||
+        post.text.toLowerCase().includes(term)
+    )
+  }
 
   const filteredResults = searchTerm ? allPosts.filter(filterPosts) : []
 
@@ -50,7 +49,7 @@ const SearchPage = () => {
         </div>
 
         <div className={styles.search}>
-        {filteredResults.length === 0 && searchTerm.length > 0 ? (
+          {filteredResults.length === 0 && searchTerm.length > 0 ? (
             <div>Nie ma takiego wyniku</div>
           ) : (
             filteredResults.map((post) => (

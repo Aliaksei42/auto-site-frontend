@@ -111,7 +111,6 @@ header {
     padding: 10px;
   }
   .languageSwitch {
-    
     padding-right: 240px;
   }
 
@@ -213,7 +212,7 @@ header {
     font-size: 1.3em;
   }
   .emailIcon {
-    font-size: 2.5em; /* font-size: 30px; */
+    font-size: 2.3em; /* font-size: 30px; */
   }
 }
 
@@ -238,7 +237,6 @@ header {
     font-size: 1.3em;
   }
   .emailIcon {
-    font-size: 2.5em; /* font-size: 30px; */
+    font-size: 2.3em; /* font-size: 30px; */
   }
-
 }

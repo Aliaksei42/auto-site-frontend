@@ -3,13 +3,13 @@ import React from 'react'
 import styles from './NotFound.module.css'
 
 const NotFound = () => {
-    const notFound = {
+  const notFound = {
     img: '../../../../img/photo/NotFound.jpg',
     title: 'Страница не найдена',
     text: 'Попробуйте через 5 мин.',
-  };
-  const { img, title, text } = notFound;
-  
+  }
+  const { img, title, text } = notFound
+
   return (
     <div className={styles.postPage}>
       <div className={styles.notFoundContainer}>
@@ -22,6 +22,5 @@ const NotFound = () => {
     </div>
   )
 }
-
 
 export default NotFound

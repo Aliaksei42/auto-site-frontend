@@ -21,10 +21,10 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.headerContent}>
         {/* Выпадающее окно с возможностью выбора языка */}
-        <div className={styles.languageSwitch}  onClick={toggleLanguageMenu}  >
+        <div className={styles.languageSwitch} onClick={toggleLanguageMenu}>
           <span className={styles.currentLanguage}>PL</span>
           {isLanguageMenuOpen && (
-            <div className={styles.languageMenu} >
+            <div className={styles.languageMenu}>
               <div onClick={() => handleLanguageSelect('EN')}>EN</div>
               <div onClick={() => handleLanguageSelect('RU')}>RU</div>
               {/* Добавьте дополнительные языки, если необходимо */}

@@ -1,20 +1,20 @@
 .topPostLink {
-  text-decoration: none; /* Убираем подчеркивание для ссылок */
+  text-decoration: none; 
   font-size: 20px;
   justify-content: center;
 }
 
 .topPost {
   position: relative;
-  display: flex; /* Устанавливаем контейнеру свойство display: flex; для использования flex-контейнера */
-  flex-direction: column; /* Задаем направление основной оси контейнера как column (столбец) */
-  color: black; /* Устанавливаем цвет текста внутри контейнера */
-  width: 720px; /* Устанавливаем ширину контейнера */
+  display: flex; 
+  flex-direction: column; 
+  color: black; 
+  width: 720px; 
   height: 540px;
   transition: transform 0.3s ease-in-out;
   overflow: hidden; /* Ограничиваем видимость дочерних элементов по границам контейнера */
   cursor: pointer;
-  text-decoration: none; /* Убираем подчеркивание для всех ссылок внутри .post */
+  text-decoration: none; 
 }
 
 .topPost:hover::before {
@@ -119,7 +119,7 @@
 
 @media screen and (max-width: 630px) and (min-width: 460px) {
   .topPost {
-    width: 100%; /* Устанавливаем ширину контейнера */
+    width: 100%; 
     height: 460px;
     justify-content: center;
   }
@@ -127,7 +127,7 @@
     font-size: 22px;
   }
   .topPostImage {
-    width: 100%; /* Устанавливаем ширину изображения */
+    width: 100%; 
     height: 330px;
     object-fit: cover; /* Заполняем контейнер, сохраняя пропорции изображения */
     transition: transform 0.3s ease-in-out; /* Анимация увеличения при наведении */
@@ -141,24 +141,23 @@
   }
 
   .topPost:hover .topPostImage {
-    transform: scale(1.08); /* Увеличиваем размер изображения при наведении */
+    transform: scale(1.08); 
   }
 }
 
 @media screen and (max-width: 460px) {
   .topPost {
-    width: 100%; /* Устанавливаем ширину контейнера */
+    width: 100%; 
     height: auto;
     min-height: 360px;
     padding-top: 10px;
-    
   }
 
   .topPostImage {
-    width: 100%; /* Устанавливаем ширину изображения */
+    width: 100%; 
     height: 260px;
-    object-fit: cover; /* Заполняем контейнер, сохраняя пропорции изображения */
-    transition: transform 0.3s ease-in-out; /* Анимация увеличения при наведении */
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out; 
   }
   .topPost:hover .topPostTitle {
     text-decoration: none;
@@ -178,6 +177,6 @@
   }
 
   .topPost:hover .topPostImage {
-    transform: scale(1); /* Увеличиваем размер изображения при наведении */
+    transform: scale(1);
   }
 }

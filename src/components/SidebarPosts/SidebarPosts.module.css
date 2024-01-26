@@ -6,19 +6,18 @@
 .sidebarPost {
   position: relative;
   box-sizing: border-box;
-  display: flex; /* Устанавливаем контейнеру свойство display: flex; для использования flex-контейнера */
-  /* Задаем направление основной оси контейнера как column (столбец) */
-  /* Выравниваем дочерние элементы по центру вдоль поперечной оси */
-  justify-content: space-between; /* Используем space-around для равномерного распределения отступов между дочерними элементами вдоль основной оси */
-  color: black; /* Устанавливаем цвет текста внутри контейнера */
-  width: 320px; /* Устанавливаем ширину контейнера */
+  display: flex;
+
+  justify-content: space-between;
+  color: black;
+  width: 320px;
   height: 170px;
   transition: transform 0.3s ease-in-out;
   padding-left: 30px;
   padding-top: 10px;
-  overflow: hidden; /* Ограничиваем видимость дочерних элементов по границам контейнера */
+  overflow: hidden;
   cursor: pointer;
-  text-decoration: none; /* Убираем подчеркивание для всех ссылок внутри .post */
+  text-decoration: none;
 }
 
 .sidebarPost:hover::before {
@@ -31,10 +30,10 @@
 
   transition: transform 0.3s ease-in-out;
   z-index: 1;
-  transform: scale(1); /* Изначально масштабирование равно 1 */
+  transform: scale(1);
 }
 .sidebarPost:hover::before {
-  transform: scale(1.1); /* Масштабирование при наведении */
+  transform: scale(1.1);
 }
 
 .sidebarPost h3 {
@@ -67,5 +66,4 @@
 }
 
 @media screen and (max-width: 950px) and (min-width: 630px) {
-
 }

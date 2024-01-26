@@ -1,5 +1,5 @@
 // src/App.js
-import React from 'react';
+import React from 'react'
 // Импортируем React и компоненты маршрутизации из библиотеки react-router-dom
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
@@ -20,7 +20,7 @@ import NotFound from './pages/NotFound'
 
 // Основной компонент приложения
 const App = () => {
-    return (
+  return (
     // Оборачиваем приложение в компонент Router для настройки маршрутизации
     <Router>
       {/* Определяем маршруты приложения */}
@@ -30,7 +30,7 @@ const App = () => {
           {/* Главная страница */}
           <Route index element={<Home />} />
           {/* Маршрут для отдельной страницы поста */}
-          
+
           <Route path="posts/:slug" element={<PostPage />} />
           {/* Новые маршруты для других страниц */}
           <Route path="news" element={<News />} />
@@ -38,7 +38,7 @@ const App = () => {
           <Route path="trends" element={<Trends />} />
           <Route path="searchPage" element={<SearchPage />} />
           <Route path="interesting" element={<Interesting />} />
-        
+
           <Route path="notFound" element={<NotFound />} />
           {/* Маршрут для обработки неизвестных маршрутов и отображения NotFound */}
           <Route path="*" element={<NotFound />} />

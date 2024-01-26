@@ -11,7 +11,10 @@ const Footer = () => {
             <br />
           </p>
           <div className={styles.footerLinks}>
-            <Link to="https://www.linkedin.com/in/aliaksei-iuko/" target="_blank">
+            <Link
+              to="https://www.linkedin.com/in/aliaksei-iuko/"
+              target="_blank"
+            >
               <img
                 src="/img/icons/emailIcon.png"
                 alt="email"
@@ -42,7 +45,6 @@ const Footer = () => {
             © Auto-Wroclaw.pl - Twój samochód, Twoja droga, Twoje miasto{' '}
             {new Date().getFullYear()}
           </p>
-        
         </div>
       </div>
     </footer>

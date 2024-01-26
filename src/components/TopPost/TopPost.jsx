@@ -15,7 +15,7 @@ const TopPost = ({ topPost }) => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   if (!topPost) {
-    return null // или обработайте случай, когда topPost не определен
+    return null 
   }
 
   const { img, title, text, slug } = topPost
