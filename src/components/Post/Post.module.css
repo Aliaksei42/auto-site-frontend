@@ -125,11 +125,11 @@
 @media screen and (max-width: 650px) and (min-width: 460px) {
   .post {
     width: 100%;
-    height: 420px;
+    height: auto;
     justify-content: center;
   }
   .postImage {
-    height: 330px;
+    height: auto;
   }
   .postTitle {
     text-decoration: none;
