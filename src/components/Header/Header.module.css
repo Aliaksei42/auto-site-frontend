@@ -184,7 +184,7 @@ header {
     padding-left: 60px;
   }
   .currentLanguage {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
   .emailIcon {
     font-size: 2.5em; /* font-size: 30px; */
@@ -209,7 +209,7 @@ header {
     padding-left: 30px;
   }
   .currentLanguage {
-    font-size: 1.3em;
+    font-size: 1.7em;
   }
   .emailIcon {
     font-size: 2.3em; /* font-size: 30px; */
@@ -234,9 +234,9 @@ header {
     padding-left: 30px;
   }
   .currentLanguage {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   .emailIcon {
-    font-size: 2.3em; /* font-size: 30px; */
+    font-size: 2em; /* font-size: 30px; */
   }
 }
