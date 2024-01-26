@@ -2,7 +2,7 @@
 
 .searchContainer {
   width: 100%;
-  max-width: 1150px; 
+  max-width: 1150px;
   margin: 0 auto;
   padding-top: 45px;
   display: flex;
@@ -12,7 +12,6 @@
 }
 
 .searchRow {
- 
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
@@ -40,11 +39,9 @@
   border-radius: 5px;
 }
 @media (max-width: 1150px) and (min-width: 650px) {
-
   .searchContainer {
     width: 100%;
     padding-top: 20px; /* Уменьшаем верхний отступ */
- 
   }
 
   .search {
@@ -52,9 +49,11 @@
     align-items: center;
   }
 
-
   .inputWithButton {
     margin-bottom: 20px; /* Уменьшаем отступ между input и результатами поиска */
+  }
+  .input {
+    width: auto;
   }
 }
 
@@ -62,7 +61,6 @@
   .searchContainer {
     width: 95%;
     padding-top: 20px; /* Уменьшаем верхний отступ */
- 
   }
 
   .search {
@@ -70,9 +68,10 @@
     align-items: center;
   }
 
-
   .inputWithButton {
     margin-bottom: 20px; /* Уменьшаем отступ между input и результатами поиска */
   }
-
+  .input {
+    width: auto;
+  }
 }

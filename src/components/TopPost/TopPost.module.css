@@ -125,7 +125,6 @@
   }
   .topPost h3 {
     font-size: 22px;
-    
   }
   .topPostImage {
     width: 100%; /* Устанавливаем ширину изображения */
@@ -136,7 +135,6 @@
   .topPostTitle {
     height: 46px;
     line-height: 3px;
-    
   }
   .topPostText {
     width: 100%;
@@ -150,8 +148,10 @@
 @media screen and (max-width: 460px) {
   .topPost {
     width: 100%; /* Устанавливаем ширину контейнера */
-    height: 400px;
-    justify-content: center;
+    height: auto;
+    min-height: 360px;
+    padding-top: 10px;
+    
   }
 
   .topPostImage {
@@ -167,11 +167,14 @@
     font-size: 19px;
     margin-top: 7px;
   }
+  .topPostTitle {
+    height: 100%;
+    line-height: 23px;
+  }
   .topPostText {
     font-size: 16px;
     width: 100%;
     margin-top: -20px;
-
   }
 
   .topPost:hover .topPostImage {
