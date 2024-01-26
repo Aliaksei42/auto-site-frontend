@@ -53,6 +53,8 @@
     margin-bottom: 20px; /* Уменьшаем отступ между input и результатами поиска */
   }
   .input {
+    justify-content: center;
+    align-items: center;
     width: auto;
   }
 }
@@ -72,6 +74,8 @@
     margin-bottom: 20px; /* Уменьшаем отступ между input и результатами поиска */
   }
   .input {
+    justify-content: center;
+    align-items: center;
     width: auto;
   }
 }
